@@ -1,0 +1,26 @@
+<p-messages [(value)]="msgs"></p-messages>
+<div>
+  <div>
+    <h5>Email*</h5>
+    <input type="text" pInputText />
+  </div>
+  <div>
+    <h5>New Password*</h5>
+    <input type="password" pPassword />
+  </div>
+  <div>
+    <h5>Confirm New Password*</h5>
+    <input type="password" pPassword />
+  </div>
+  <div>
+    <h5>Cntact No*</h5>
+    <input type="text" pInputText />
+  </div>
+  <div>
+    <h5>Birth Date*</h5>
+    <p-calendar [showIcon]="true"></p-calendar>
+  </div>
+  <div style="margin-top:10px">
+      <button pButton type="button" label="Submit Details" class="ui-button-rounded" (click)="submitDetailsClientHandler()"></button>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a href="" routerLink="home">Home</a>
+    <a href="" routerLink="contact">Contact</a>
+    <a href="" routerLink="aboutus">About</a>
+  </div>
+</div>
+<div>
+  <div class="">
+    <a routerLink="/student-visa">
+      <img
+        src="assets/student-visa-icon.png"
+        class="flag-icon"
+        width="150"
+        height="100"
+        alt="Student Visa"
+      />
+    </a>
+    <a routerLink="/pr-visa">
+      <img
+        src="assets/pr-man-icon.jpg"
+        class="flag-icon"
+        width="150"
+        height="100"
+        alt="PR Visa"
+      />
+    </a>
+  </div>
+</div>
+<p-megaMenu [model]="items"></p-megaMenu>
+<router-outlet></router-outlet>

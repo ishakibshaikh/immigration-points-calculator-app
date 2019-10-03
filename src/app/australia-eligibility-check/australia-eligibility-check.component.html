@@ -1,0 +1,323 @@
+<div>
+  <h2>Points Test</h2>
+  <span></span>
+</div>
+<div class="diff_panel">
+  <h3>Visa Subclass</h3>
+  Which of the following subclasses are you applying for?
+  <div class="option_panel">
+    <input
+      type="radio"
+      checked="true"
+      name="app_type"
+      id="independent"
+      value="0"
+      display_text="Skilled Independent"
+    />
+    <b>Skilled Independent Subclass 189</b> - no sponsorship required. You must
+    have an occupation on the new Skilled Occupations List.
+  </div>
+  <div class="option_panel">
+    <input
+      type="radio"
+      name="app_type"
+      id="sponsored"
+      value="5"
+      display_text="Skilled Sponsored (Australian Relative)"
+    />
+    <b>Skilled Nominated Subclass 190</b> - requires nomination by a State or
+    Territory Government. You must have an occupation on the Consolidated
+    Sponsored Occupations List (CSOL).
+  </div>
+  <div class="option_panel">
+    <input
+      type="radio"
+      name="app_type"
+      id="regional"
+      value="10"
+      display_text="Skilled Regional (Provisional)"
+    />
+    <b>Skilled Regional (Provisional) Subclass 489</b> - requires sponsorship by
+    a relative living in a designated area or a state or territory government.
+  </div>
+  <hr />
+  <strong>Score: <span id="app_type_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Age <b style="color:red">*</b></h3>
+  Which age band do you fit into?
+  <div class="option_panel">
+    <select type="select" id="umer_foralert" name="AgeSelect"
+      ><option value="-2000">Under 18</option
+      ><option value="25" selected="selected">18 to 24</option
+      ><option value="30">25 to 32</option
+      ><option value="25">33 to 39</option
+      ><option value="15">40 to 44</option></select
+    >
+  </div>
+  <hr />
+  <strong>Score: <span id="AgeSelect_Score">25</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>English Language Ability <b style="color:red">*</b></h3>
+  How would you rate your English language ability?
+  <div class="option_panel">
+    <input type="radio" checked="checked" name="English" value="0" />
+    <b>Competent English:</b>
+    <div class="bullets">6+ in all 4 components of IELTS or</div>
+    <div class="bullets">passport from UK, USA, Ireland, Canada or NZ</div>
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="English" value="10" />
+    <b>Proficient English: </b>
+    <div class="bullets">7+ in all 4 components of IELTS or</div>
+    <div class="bullets">OET B Pass</div>
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="English" value="20" />
+    <b>Superior English: </b>
+    <div class="bullets">8+ in all 4 components of IELTS or</div>
+    <div class="bullets">OET A Pass</div>
+  </div>
+  <div class="option_panel">
+    <input type="radio" id="angreji_foralert" name="English" value="-2000" />
+    Less than competent English
+  </div>
+  <hr />
+  <strong>Score: <span id="English_Score"> Not Met </span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Australian Educational Qualification</h3>
+  Have you met the requirements for the award of degree, diploma, advanced
+  diploma or trade qualification(s) which took at least 2 years of full-time
+  study in Australia at an Australian institution ?
+  <div class="option_panel">
+    <input
+      type="radio"
+      label="study"
+      name="Aus"
+      value="5"
+      id="uniquetodisplay"
+    />
+    Yes: Degree, diploma advanced diploma or trade qualification(s) taking at
+    least 2 years of full-time study in Australia.
+  </div>
+  <div class="option_panel">
+    <input
+      checked="checked"
+      type="radio"
+      label="no_study"
+      name="Aus"
+      value="0"
+    />
+    No
+  </div>
+  <hr />
+  <strong>Score: <span id="Aus_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Specialist Education Qualification</h3>
+  Have you met the requirements for the award of an Australian specialist
+  educational qualification?
+  <div class="option_panel">
+    <input
+      type="radio"
+      label="study"
+      name="Aus_sep"
+      value="5"
+      id="displaySep"
+    />
+    Yes: post-graduate studies at doctoral or masters (research) level in a
+    specific field eg science, technology, engineering, mathematics, or
+    information and communication technology taking at least 2 years of full
+    time study in Australia. *Our Migration Specialist will confirm the
+    specialist field
+  </div>
+  <div class="option_panel">
+    <input
+      checked="checked"
+      type="radio"
+      label="no_study"
+      name="Aus_sep"
+      value="0"
+    />
+    No
+  </div>
+  <hr />
+  <strong>Score: <span id="Sep_Edu-Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Qualifications</h3>
+  What is your highest Qualification?
+  <div class="option_panel">
+    <input type="radio" name="Qualification" value="20" />
+    <b>20:</b> Recognised PhD (Doctorate)
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="Qualification" value="15" />
+    <b>15:</b> Recognised Bachelor degree or higher
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="Qualification" value="10" />
+    <b>10:</b> Recognised Trade Qualification including
+    <div class="bullets">
+      Diploma or Trade Certificate completed at an Australian educational
+      institution
+    </div>
+    <div class="bullets">
+      Other award or qualification recognised by the skills assessing authority
+    </div>
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="Qualification" value="0" checked="checked" />
+    <b>0:</b> No Recognised Qualifications
+  </div>
+  <hr />
+  <strong>Score: <span id="Qualification_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Overseas Work Experience</h3>
+  Thinking about your work experience <b>overseas</b>, in the last 10 years, how
+  long have you worked in your nominated occupation or closely related skilled
+  occupation? *As specific criteria applies, our Migration Specialist will need
+  to assess your situation to confirm number of years which can be claimed:
+  <div class="option_panel">
+    <input id="Experience_15" type="radio" name="Experience" value="15" />
+    <b>8 Years</b> or more
+  </div>
+  <div class="option_panel">
+    <input id="Experience_10" type="radio" name="Experience" value="10" />
+    <b>5 Years</b> or more
+  </div>
+  <div class="option_panel">
+    <input id="Experience_5" type="radio" name="Experience" value="5" />
+    <b>3 Years</b> or more
+  </div>
+  <div class="option_panel">
+    <input
+      id="Experience_0"
+      type="radio"
+      name="Experience"
+      value="0"
+      checked="checked"
+    />
+    Less than 3 years
+  </div>
+  <hr />
+  <strong>Score: <span id="Experience_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Australian Work Experience</h3>
+  Thinking about your work experience <b>in Australia</b>, in the last 10 years,
+  how long have you worked in your nominated occupation or closely related
+  skilled occupation? *As specific criteria applies, our Migration Specialist
+  will need to assess your situation to confirm number of years which can be
+  claimed:
+  <div class="option_panel">
+    <input
+      id="Aust_Experience_20"
+      type="radio"
+      name="Aust_Experience"
+      value="20"
+    />
+    <b>8 Years </b> or more
+  </div>
+  <div class="option_panel">
+    <input
+      id="Aust_Experience_15"
+      type="radio"
+      name="Aust_Experience"
+      value="15"
+    />
+    <b>5 Years </b> or more
+  </div>
+  <div class="option_panel">
+    <input
+      id="Aust_Experience_10"
+      type="radio"
+      name="Aust_Experience"
+      value="10"
+    />
+    <b>3 Years</b> or more
+  </div>
+  <div class="option_panel">
+    <input
+      id="Aust_Experience_5"
+      type="radio"
+      name="Aust_Experience"
+      value="5"
+    />
+    <b>1 Year</b> or more
+  </div>
+  <div class="option_panel">
+    <input
+      id="Aust_Experience_0"
+      type="radio"
+      name="Aust_Experience"
+      value="0"
+      checked="checked"
+    />
+    Less than one year
+  </div>
+  <hr />
+  <strong>Score: <span id="Aust_Experience_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Partner Skill Qualifications</h3>
+  Check any boxes which apply to your partner or spouse
+  <div class="option_panel">
+    <input type="checkbox" id="SAge" value="0" />
+    My partner is aged under 45
+  </div>
+  <div class="option_panel">
+    <input type="checkbox" id="SEnglish" value="0" />
+    My partner has competent English ability
+  </div>
+  <div class="option_panel">
+    <input type="checkbox" id="SOccupation" value="0" />
+    My partner can pass skills assessment in an occupation on the applicable
+    Skilled Occupations List for my subclass.
+  </div>
+  <hr />
+  <strong>Score: <span id="Spouse_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Partner Skill Qualifications</h3>
+  Check any boxes which apply to your partner or spouse
+  <div class="option_panel">
+    <input type="checkbox" id="SAge" value="0" />
+    My partner is aged under 45
+  </div>
+  <div class="option_panel">
+    <input type="checkbox" id="SEnglish" value="0" />
+    My partner has competent English ability
+  </div>
+  <div class="option_panel">
+    <input type="checkbox" id="SOccupation" value="0" />
+    My partner can pass skills assessment in an occupation on the applicable
+    Skilled Occupations List for my subclass.
+  </div>
+  <hr />
+  <strong>Score: <span id="Spouse_Score">0</span></strong>
+</div>
+<div class="diff_panel">
+  <h3>Designated Language</h3>
+  Do any of the following apply to you?
+  <div class="option_panel">
+    <input type="radio" name="bonus" value="5" />
+    I am accredited as a para-professional interpreter or translator (level 2)
+    by the National Accreditation Authority for Translators and Interpreters
+  </div>
+  <div class="option_panel">
+    <input type="radio" name="bonus" value="0" checked="checked" />
+    None of the above
+  </div>
+  <hr />
+  <strong>Score: <span id="bonus_Score">0</span></strong>
+</div>
+<div class="main_score_totaling">
+  <h3>Skilled Migration Points Test Results</h3>
+  <strong>Your score is:</strong>
+  <span id="points_score"> ( Pending.. )</span>
+  <div>As the pass mark for <span id="eligibility"></span></div>
+</div>
